@@ -10,3 +10,7 @@ class TestBasics(unittest.TestCase):
 		result = rpn.calculate('5 3 -')
 		self.assertEqual(2, result)
 
+	def test_exponentiation(self):
+		result = rpn.calculate('2 1 ^')
+		self.assertEqual(2, result)
+
